@@ -5,14 +5,12 @@
 }
 
 body {
-  margin: 60px auto;
-  max-width: 100%;
+  margin: 100px 0;
 }
 
 h1,
 h2,
 h3 {
-  text-align: center;
   margin: 0;
 }
 
@@ -28,12 +26,10 @@ h3 {
   font-size: 24px;
   opacity: 0.7;
 }
+
 p {
-  padding: 20px;
-  border-radius: 4px;
   font-size: 18px;
   line-height: 1.5;
-  text-align: center;
 }
 
 .navigation-links {
@@ -44,23 +40,27 @@ p {
 
 .navigation-links a {
   margin: 20px;
+}
+
+.primary-link {
   border-radius: 4px;
   padding: 20px 15px;
   text-decoration: none;
   text-transform: capitalize;
-}
-.img-fluid {
-  max-width: 100%;
-  height: auto;
-}
-
-.contact-link {
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: white;
 }
 
-.about-link {
+.primary-link:hover {
+  color: white;
+}
+
+.secondary-link {
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
 }
@@ -70,16 +70,8 @@ p {
   text-align: center;
   display: block;
 }
-.btn {
-  background-color: var(--primary-color);
-  color: white;
-}
-.about-me-h1 {
-  font-size: 96px;
-  margin-top: 70px;
-}
+
 .about-paragraphs {
-  display: flex;
   margin: 30px 0;
 }
 
@@ -99,42 +91,24 @@ p {
   text-decoration: underline;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 576px) {
   h1 {
-    font-size: 60px;
+    font-size: 48px;
+    line-height: 1.5;
   }
+
   h2 {
-    margin-top: 90px;
-    padding-top: 20px;
-    font-size: 30px;
-  }
-  h3 {
-    font-size: 25px;
-    margin-top: 20px;
-  }
-  .showcase-column {
+    font-size: 32px;
     text-align: center;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
   }
-  .showcase-column h2 {
-    margin-left: auto;
-    margin-right: auto;
-    display: inline-block;
-    font-size: 25px;
+
+  p {
+    text-align: center;
   }
-  .showcase-column p {
-    margin-left: auto;
-    margin-right: auto;
-    display: inline-block;
-  }
-  .show-column a {
-    padding: 20px;
-  }
-  .text-body {
-    padding: 20px;
-  }
-  .image-box {
-    display: none;
+
+  .project-link {
+    display: block;
+    text-align: center;
+    margin: 0 20px;
   }
 }
